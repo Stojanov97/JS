@@ -1,0 +1,3 @@
+1. JS izmislen od Brendan Eich vo 1995 godina, prvicno ime mu bilo livescript
+2. Prog jazik koj se intepretira na web prelistuvac t.e v8
+3. So js moze da se menuva tekstot na samata web strana dinamicki, da validira nekakov input

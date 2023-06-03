@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var phonePrice = 119.95;
+      var taxRate = 5;
+      //   var phones = prompt("How many phones would you like?");
+      var phones = 30;
+      var total_WO_tax = phones * phonePrice;
+      var total_tax_only = (total_WO_tax / 100) * taxRate;
+      var total = total_WO_tax + total_tax_only;
+      console.log(total + "$");
+    </script>
+  </head>
+  <body></body>
+</html>

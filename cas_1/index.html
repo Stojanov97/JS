@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 1</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+    </style>
+    <script type="text/javascript">
+      //   console.log("zdravo jas sum Riste");
+      //   console.log("zdravo" + " na" + " site");
+      //   console.log("5" + "5");
+      //   alert("Hello world");
+
+      /* data type
+        string -> "string"
+        char -> 'char'
+        int -> 0-beskonecno - number
+        float -> decimalen broj - float
+        boolean -> 0/1
+      */
+
+      //   console.log("the number 42 is of type " + typeof 42);
+      //   console.log("The number '42' is of type" + typeof "42");
+      //   console.log("The statement true is of type " + typeof true);
+
+      // promenlivi (variables)
+      var abc;
+      console.log(abc);
+
+      abc = "ovaa promenliva e string i se vika abc";
+      console.log(abc);
+
+      //pravila za imenuvanje na promenlivi
+      //1. smee da ima brojki, no ne da pocnuva so edna
+      //2. smee da sodrzi'_' i '$', no ne i drugi spec karakteri
+      //3. ne smee da ima prazni mesta vo imeto na promenlivata
+
+      var vtoraPromenliva;
+      var $treta_Promenliva;
+      var Abc;
+
+      var prvBroj = 4;
+
+      //matematicki operacii +, -, *, /, %, ++, --
+      var broj1 = 4;
+      var broj2 = 10;
+      var broj3 = "5";
+      var broj4 = 20;
+      var zbir = broj1 + broj2 + broj3;
+      var razlika = broj2 - broj1;
+      var mnozenje = broj1 * broj2;
+      var delenje = broj4 / broj1;
+      var delenje2 = broj2 / broj1;
+      var modul = broj2 % broj1;
+      console.log(zbir);
+      console.log(razlika);
+      console.log(mnozenje);
+      console.log(delenje);
+      console.log(delenje2);
+      console.log(modul);
+      console.log(broj6);
+      // increment
+      var broj6 = ++broj1; //isto so var broj6 = broj1 + 1
+      console.log(broj1++); // na ovaa linija kazuvame deka broj1 ke se zgolemi za 1, no vo momentot seuste ne e zgolemena
+      console.log(broj1); // ovde veke broj1 e zgolemen za 1 od prethodnata linija
+      console.log(++broj1); // ovde go izmenuva broj1 odma odnosno vo istata linija
+      //decrement
+      console.log(broj4--); // na ovaa linija kazuvame deka broj1 ke se namali za 1, no vo momentot seuste ne e namalena
+      console.log(broj4); // ovde veke broj4 e namalen za 1 od prethodnata linija
+      console.log(--broj4); // ovde go izmenuva broj4 odma odnosno vo istata linija
+
+      //assignment operacii -=, +=, /=, *=, %=
+      broj4 = broj4 - 1; //ne vaka
+      broj4 -= 4;
+      console.log(broj4);
+      broj4 += 8;
+      console.log(broj4);
+      broj4 %= 3;
+      console.log(broj4);
+
+      //promt
+      //   var number1 = prompt("Vnesi broj 1");
+      //   console.log(number1);
+      //   console.log(typeof number1);
+      //   var parsedNumber1 = parseInt(number1);
+      //   console.log(parsedNumber1);
+      //   console.log(typeof parsedNumber1);
+
+      // var ime = prompt("Vnesi ime");
+      // var prezime = prompt("Vnesi prezime");
+      // var godini = prompt("Vnesi godini");
+      // console.log("Jas " + ime + " " + prezime + " imam " + godini + " godini");
+
+      //operacii za sporedba >, <, >=, <=, ==, ===, !=, !==
+
+      console.log(5 == "5"); //proveruva dali dvata broja se ednakvi po vrednost
+      console.log(5 === "5"); //proveruva dali se ednakvi po vrednost i tip
+      console.log(5 != "5");
+      console.log(5 !== "5");
+
+      //operacija za da se dobie sprotivna vrednost
+
+      var booleanVrednost = true;
+      console.log(booleanVrednost); //ovde ja iskazuva veke zadadenata vrednost
+      console.log(!booleanVrednost); //ovde ja izmenuva da stane sprotivna
+
+      //logicki operacii AND (I) i OR (ILI)
+      //AND -> && - dokolku dvata iskazi se tocni togas konecniot rezultat e tocen
+      // t && t -> true
+      // t && f -> false
+      // f && f -> false  ????
+      //OR -> || - dokolku eden iskaz e tocen ke dade true
+      // t || t -> true
+      // t || f -> true
+      // f || f -> false
+
+      var vrednost = true;
+      var vrednost2 = false;
+      console.log(!vrednost && 9 % 3 == 0); // -> false
+
+      console.log(!vrednost || 9 % 3 == 0); // -> true
+    </script>
+  </head>
+  <body></body>
+</html>
