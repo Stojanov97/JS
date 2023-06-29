@@ -101,3 +101,58 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", () => {
   document.getElementById("result").innerHTML = `<p>${new Date()}<p/>`;
 });
+
+//9to predavanje
+
+let input = document.getElementById("inputField");
+let formBtn = document.getElementById("formBtn");
+formBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(input.value);
+  input.value = "";
+});
+
+let div = document.createElement("div");
+div.id = "firstDiv";
+div.innerHTML = `<p>ova e paragraf<p/><h1>Naslov<h1/>`;
+div.style.color = "red";
+div.style.height = "100px";
+div.style.width = "100px";
+div.style.background = "green";
+div.className.add = "";
+document.body.appendChild(div);
+
+let studenti = [
+  { name: "Hristo", surname: "Gigovski", email: "e1" },
+  { name: "Riste", surname: "Stojanov", email: "e2" },
+  { name: "Nikola", surname: "Talevski", email: "e3" },
+  { name: "Chedomir", surname: "Stefanovski", email: "e4" },
+  { name: "Stevica", surname: "Manasievski", email: "e5" },
+];
+
+function createTable(niza, naslov) {
+  let tabela = document.createElement("table");
+  let caption = document.createElement("caption");
+  caption.innerText = naslov;
+  tabela.appendChild(caption);
+  let firstRow = document.createElement("tr");
+  for (key in niza[0]) {
+    let th = document.createElement("th");
+    th.innerText = key;
+    firstRow.appendChild(th);
+  }
+  tabela.appendChild(firstRow);
+  for (element of niza) {
+    let tr = document.createElement("tr");
+    for (kluc in element) {
+      let td = document.createElement("td");
+      td.innerText = element[kluc]; //vrednost na edno property
+      tr.appendChild(td);
+    }
+    tabela.appendChild(tr);
+  }
+  tabela.setAttribute("border", "1px");
+  document.body.appendChild(tabela);
+}
+
+createTable(studenti, "Studenti");
