@@ -85,6 +85,7 @@ let startsWithVowel = (array) => {
       case "u":
       case "U":
         vowelProducts.push(`${product.name} - ${product.price}`);
+        break;
     }
   });
   if (vowelProducts.length > 0) {

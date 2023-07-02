@@ -132,7 +132,7 @@ console.log(hello.substr(1, 8));
 console.log(hello);
 hello = hello.replace("hello", "Hello");
 // hello = hello.replace("hello", "Hello");
-console.log(hello);
+console.log(helloNiza);
 
 // trim -> gi brise praznite mesta na pocetokot i krajot od stringot
 
