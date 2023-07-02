@@ -186,9 +186,8 @@ function calc(operator) {
 }
 
 let operacija = calc("-");
-
 console.log(operacija(1, 2));
-
+//console.log(calc("-")(1, 4));
 //function as argument
 
 function greeting() {

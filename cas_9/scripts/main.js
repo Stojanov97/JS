@@ -65,7 +65,7 @@ let pecati = () => {
 };
 
 let p = new Promise((resolve, reject) => {
-  let a = 10;
+  let a = 90;
   if (a == 10) {
     resolve();
   } else {
@@ -116,7 +116,9 @@ function get(url) {
 get("https://randomuser.me/api/?results=10")
   .then((data) => {
     console.log("we got the data");
-    console.log(JSON.parse(data));
+    JSON.parse(data).results.forEach((element) => {
+      console.log(element.name.first);
+    });
   })
   .catch((error) => console.log(error));
 

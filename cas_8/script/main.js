@@ -1,4 +1,4 @@
-// let niza = [5, 4, 1, 10, 3, 2];
+//let niza = [5, 4, 1, 10, 3, 2];
 
 // niza.forEach((x, i) => {
 //   console.log(x); //vrednost
@@ -31,13 +31,13 @@
 // // console.log(niza);
 
 // //reduce
-// console.log(niza);
-// let redicedNiza = niza.reduce((acc, curr) => {
-//   //acc - accumulator(vrednost), curr - current(index)
-//   console.log(acc);
-//   return acc + curr;
-// }, 0);
-// console.log(redicedNiza);
+//console.log(niza);
+//let redicedNiza = niza.reduce((acc, curr) => {
+//  //acc - accumulator(vrednost), curr - current(momentalna vrednost na elementot vo nizata - spored indexot)
+//  console.log(acc + " " + curr);
+//  return acc + curr;
+//}, 0);
+//console.log(redicedNiza);
 
 // let proizvod = niza.reduce((x, y) => {
 //   return x * y;
