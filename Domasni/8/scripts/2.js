@@ -16,6 +16,10 @@ let colors = [
   "white",
 ];
 let counter = 0;
+let firstName = prompt("What is your name?");
+let playCatch = divs[2].childNodes[1];
+let catchMe = divs[2].childNodes[3];
+
 for (i = 0; i < universalSelector.length; i++) {
   let element = universalSelector[i];
   element.style.boxSizing = "border-box";
@@ -33,7 +37,7 @@ paragraphs.forEach((paragraph) => {
   paragraph.style.fontSize = "1.3rem";
 });
 
-paragraphs[0].textContent = "Hover on me to change colors";
+paragraphs[0].textContent = "Hover on the div for me to change colors";
 title.textContent = "I am black";
 
 firstDiv.addEventListener("mouseover", () => {
@@ -52,7 +56,7 @@ firstDiv.addEventListener("mouseout", () => {
   title.style.color = "#000";
   clearInterval(blinkingText);
   paragraphs[0].style.color = "#000";
-  paragraphs[0].textContent = "Hover on me to change colors";
+  paragraphs[0].textContent = "Hover on the div for me to change colors";
   title.textContent = "I am black";
 });
 
@@ -63,39 +67,30 @@ divs[1].style.height = "150px";
 paragraphs[1].style.fontSize = "19px";
 paragraphs[1].textContent =
   "I have changed from 'No really, It's easy!' to this";
-document.getElementsByTagName("text")[0].innerHTML =
-  "<p>new paragraph</p> the text tag is under here";
+document.getElementsByTagName(
+  "text"
+)[0].innerHTML = `<p>Hi, ${firstName}</p> the text tag is under here`;
 
-divs[2].childNodes[1].textContent = "Let's play catch";
-divs[2].childNodes[1].style.padding = "0 0 60px 0";
+playCatch.textContent = "Let's play catch";
+playCatch.style.padding = "0 0 60px 0";
 divs[2].style.height = "300px";
 divs[2].style.width = "500px";
 divs[2].style.background = "lime";
 divs[2].style.position = "absolute";
-divs[2].childNodes[3].textContent = "Catch me!";
-divs[2].childNodes[3].addEventListener("mouseover", () => {
+catchMe.textContent = "Catch me!";
+catchMe.addEventListener("mouseover", () => {
   counter % 3 == 0
-    ? ((divs[2].childNodes[3].style.float = "right"),
-      (divs[2].childNodes[3].style.top = `-${Math.floor(
-        Math.random() * 60
-      )}px`),
-      (divs[2].childNodes[3].style.right = `${Math.floor(
-        Math.random() * 60
-      )}px`),
-      (divs[2].childNodes[3].style.left = "auto"))
+    ? ((catchMe.style.float = "right"),
+      (catchMe.style.top = `-${Math.floor(Math.random() * 60)}px`),
+      (catchMe.style.right = `${Math.floor(Math.random() * 60)}px`),
+      (catchMe.style.left = "auto"))
     : counter % 3 == 1
-    ? ((divs[2].childNodes[3].style.float = "left"),
-      (divs[2].childNodes[3].style.top = `-${Math.floor(
-        Math.random() * 60
-      )}px`),
-      (divs[2].childNodes[3].style.left = `${Math.floor(
-        Math.random() * 60
-      )}px`))
-    : ((divs[2].childNodes[3].style.position = "relative"),
-      (divs[2].childNodes[3].style.top = `${Math.floor(Math.random() * 60)}px`),
-      (divs[2].childNodes[3].style.right = `-${Math.floor(
-        Math.random() * 20
-      )}px`));
+    ? ((catchMe.style.float = "left"),
+      (catchMe.style.top = `-${Math.floor(Math.random() * 60)}px`),
+      (catchMe.style.left = `${Math.floor(Math.random() * 60)}px`))
+    : ((catchMe.style.position = "relative"),
+      (catchMe.style.top = `${Math.floor(Math.random() * 60)}px`),
+      (catchMe.style.right = `-${Math.floor(Math.random() * 20)}px`));
   counter++;
 });
-divs[2].childNodes[3].style.color = "purple";
+catchMe.style.color = "purple";
