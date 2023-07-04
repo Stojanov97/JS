@@ -14,9 +14,10 @@ let createList = (array) => {
 
 let sumOfListNums = (list) => {
   let nizaZaSum = [];
-  //   list.children.forEach((child) => {
-  //     nizaZaSum.push(Number(child.innerText));   - ne mi e jasno zosto ne raboti vaka
-  //   });
+  // console.log(list.children);
+  // list.children.forEach((child) => {
+  //   nizaZaSum.push(Number(child.innerText));
+  // });
   for (i = 0; i < list.children.length; i++) {
     nizaZaSum.push(Number(list.children[i].innerText));
   }
