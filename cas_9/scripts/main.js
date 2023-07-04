@@ -139,3 +139,16 @@ fetch("https://randomuser.me/api/?results=10")
       "ova ke se izvrsi bez razlika dali povikuvanjeto e dobro ili ne"
     )
   );
+//III nacin - async/await
+
+async function getDataFromFetch() {
+  try {
+    let response = await fetch("https://randomuser.me/api/?results=10");
+    let data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.log(err.message);
+  } finally {
+    console.log("sekad se izvrsuva");
+  }
+}
