@@ -12,7 +12,7 @@ btn.style.cursor = "pointer";
 document.body.appendChild(btn);
 
 document.getElementById("btn").addEventListener("click", () => {
-  if (clickCounter % 2 == 1 || clickCounter > 1) {
+  if (clickCounter >= 1) {
     document.getElementById("table").remove();
   }
   let todo;
